@@ -1,10 +1,10 @@
-package br.gov.sp.fatec.springboot3app;
+package kaua.fatec.estudo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Springboot3appApplicationTests {
+class EstudoApplicationTests {
 
 	@Test
 	void contextLoads() {

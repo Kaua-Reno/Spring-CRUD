@@ -1,13 +1,13 @@
-package br.gov.sp.fatec.springboot3app;
+package kaua.fatec.estudo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Springboot3appApplication {
+public class EstudoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Springboot3appApplication.class, args);
+		SpringApplication.run(EstudoApplication.class, args);
 	}
 
 }
