@@ -8,11 +8,11 @@
 		<version>3.1.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>kaua.fatec</groupId>
-	<artifactId>estudo</artifactId>
+	<groupId>br.gov.sp.fatec</groupId>
+	<artifactId>projeto-spring20231</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>estudo</name>
-	<description>estudo para a prova</description>
+	<name>projeto-spring20231</name>
+	<description>Sistema para registro de anotações</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -36,10 +36,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.mysql</groupId>
-			<artifactId>mysql-connector-j</artifactId>
 		</dependency>
 	</dependencies>
 
