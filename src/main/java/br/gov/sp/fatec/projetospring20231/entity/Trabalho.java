@@ -6,6 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "tra_trabalho")
@@ -81,6 +82,12 @@ public class Trabalho {
     }
     public void setNota(Integer nota) {
     this.nota = nota;
+    }
+    public String getJustificativa() {
+    return justificativa;
+    }
+    public void setJustificativa(String justificativa) {
+    this.justificativa = justificativa;
     }
 }
 
