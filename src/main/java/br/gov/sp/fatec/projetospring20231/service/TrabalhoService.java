@@ -28,7 +28,7 @@ public class TrabalhoService implements ITrabalhoService{
                 trabalho.getGrupo() == null ||
                 trabalho.getNota() == null ||
                 trabalho.getJustificativa() == null) {
-            throw new IllegalArgumentException("Nome, Descrição, Grupo, Nota ou Justificativa inválidos!");
+            throw new IllegalArgumentException("Titulo, Grupo, Nota ou Justificativa inválidos!");
         }
         return trabalhoRepo.save(trabalho);
     }
