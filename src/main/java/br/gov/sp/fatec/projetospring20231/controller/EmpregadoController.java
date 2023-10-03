@@ -11,30 +11,30 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.gov.sp.fatec.projetospring20231.entity.Trabalho;
-import br.gov.sp.fatec.projetospring20231.service.ITrabalhoService;
+import br.gov.sp.fatec.projetospring20231.entity.Empregado;
+import br.gov.sp.fatec.projetospring20231.service.IEmpregadoService;
 
 @RestController
 @CrossOrigin
-@RequestMapping(value = "/trabalho")
-public class TrabalhoController {
+@RequestMapping(value = "/empregado")
+public class EmpregadoController {
 
     @Autowired
-    private ITrabalhoService service;
+    private IEmpregadoService service;
 
     @GetMapping
-    public List<Trabalho> buscarTodos() {
+    public List<Empregado> buscarTodos() {
         return service.buscarTodos();
     }
 
-    @GetMapping(value = "/{trabalho}")
-    public Trabalho buscarPorId(@PathVariable("trabalho") Long id) {
+    @GetMapping(value = "/{empregado}")
+    public Empregado buscarPorId(@PathVariable("empregado") Long id) {
         return service.buscarPorId(id);
     }
 
     @PostMapping
-    public Trabalho novoTrabalho(@RequestBody Trabalho trabalho) {
-        return service.novoTrabalho(trabalho);
+    public Empregado novoEmpregado(@RequestBody Empregado empregado) {
+        return service.novoEmpregado(empregado);
     }
  
 }
